@@ -6,7 +6,7 @@ import { AngularSlickgridModule } from 'angular-slickgrid';
   imports:  [
     BrowserModule,
     FormsModule,
-    //AngularSlickgridModule.forRoot()
+    AngularSlickgridModule.forRoot()
       //{
       // add any Global Grid Options/Config you might want
       // to avoid passing the same options over and over in each grids of your App
