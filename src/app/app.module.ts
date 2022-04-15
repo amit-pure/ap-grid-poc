@@ -8,7 +8,9 @@ import { SlickGridModule } from './slick-grid/slick-grid.module';
 import {MatTabsModule} from '@angular/material/tabs';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule,MatTabsModule, SlickGridModule, BrowserAnimationsModule],
+  imports:      [ BrowserModule, FormsModule,MatTabsModule,BrowserAnimationsModule
+   // , SlickGridModule
+  ],
   declarations: [ AppComponent, HelloComponent ],
   bootstrap:    [ AppComponent ]
 })
