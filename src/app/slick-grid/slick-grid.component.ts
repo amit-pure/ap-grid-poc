@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { GridOption, Formatters } from 'angular-slickgrid';
+import { GridOption } from 'angular-slickgrid';
 //import { Coulmn  } from './../modules/angular-slickgrid';
 
 @Component({
@@ -8,8 +8,8 @@ import { GridOption, Formatters } from 'angular-slickgrid';
   styleUrls: ['./slick-grid.component.scss']
 })
 export class SlickGridComponent implements OnInit {
-  columnDefinitions1: Column[] = [];  
-  gridOptions1!: GridOption;  
+  columnDefinitions1: Array<any> = [];  
+  gridOptions1!: GridOption|any;  
   dataset1!: any[];
   constructor() { }
 
@@ -18,8 +18,8 @@ export class SlickGridComponent implements OnInit {
       { id: 'title', name: 'Title', field: 'title', sortable: true },
       { id: 'duration', name: 'Duration (days)', field: 'duration', sortable: true },
       { id: '%', name: '% Complete', field: 'percentComplete', sortable: true },
-      { id: 'start', name: 'Start', field: 'start', formatter: Formatters.dateIso },
-      { id: 'finish', name: 'Finish', field: 'finish', formatter: Formatters.dateIso },
+      //{ id: 'start', name: 'Start', field: 'start', formatter: Formatters.dateIso },
+      //{ id: 'finish', name: 'Finish', field: 'finish', formatter: Formatters.dateIso },
       { id: 'effort-driven', name: 'Effort Driven', field: 'effortDriven', sortable: true }
     ];
     this.gridOptions1 = {
